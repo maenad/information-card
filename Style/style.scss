@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+
+html {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(216, 215, 215);
+}
+  .card {
+    background: white;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    
+    .photo {
+      width: 70%;
+      display: flex;
+      justify-content: flex-end;
+      
+      img {
+        height: 100%;
+      }
+    }
+    
+    .content {
+      width: 80%;
+      padding-top: 5%;
+      padding-left: 10%;
+
+      .logo {
+        padding-bottom: 4em;
+      }
+      .big-title {
+        width: 30%;
+        padding-bottom: 0.5em;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        font-weight: 600;
+        
+        span {
+          color: hsl(0, 36%, 70%);
+          font-weight: 300;
+        }
+      }
+      .info {
+        width: 80%;
+        padding-bottom: 2.5em;
+        color: hsl(0, 36%, 70%);
+        font-size: 13px;
+      }
+      .form {
+        width: 85%;
+
+        #email {
+          height: 2.5em;
+          width: 80%;
+          border-radius: 50px;
+          text-indent: 1em;
+          border: 0.5px solid hsl(0, 36%, 70%);
+
+        }
+        
+        #button {
+          height: 3em;
+          width: 5em;
+          margin-left: -40px;
+          border-radius: 50px;
+          background-image: linear-gradient(-90deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+          border: none;
+
+
+
+        }
+      }
+
+
+    }
+  }
+
+
+///
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+//
+
+@media only screen and (max-width: 600px) {
+ html {
+  justify-content: center;
+ }
+  .card {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: center;
+   width: 10px;
+   padding: 0;
+   margin: 100
+
+   .content {
+    width: 10px;
+  }
+ } 
+}

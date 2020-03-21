@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+html {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #d8d7d7;
+}
+
+.card {
+  background: white;
+  width: 70%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url("../images/bg-pattern-desktop.svg");
+}
+
+.card .photo {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card .photo img {
+  height: 100%;
+}
+
+.card .content {
+  width: 80%;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+.card .content .logo {
+  padding-bottom: 4em;
+}
+
+.card .content .big-title {
+  width: 30%;
+  padding-bottom: 0.5em;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-weight: 600;
+}
+
+.card .content .big-title span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.card .content .info {
+  width: 80%;
+  padding-bottom: 2.5em;
+  color: #ce9797;
+  font-size: 13px;
+}
+
+.card .content .form {
+  width: 85%;
+}
+
+.card .content .form #email {
+  height: 2.5em;
+  width: 80%;
+  border-radius: 50px;
+  text-indent: 1em;
+  border: 0.5px solid #ce9797;
+}
+
+.card .content .form #button {
+  height: 3em;
+  width: 5em;
+  margin-left: -40px;
+  border-radius: 50px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee8c8c), to(#f8bfbf));
+  background-image: linear-gradient(-90deg, #ee8c8c, #f8bfbf);
+  border: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+  .card .info {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
